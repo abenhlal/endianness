@@ -1,1 +1,2 @@
 *.cmake.in linguist-detectable=false
+CMakeLists.txt linguist-detectable=false
