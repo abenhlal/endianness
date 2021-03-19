@@ -1,5 +1,5 @@
-#ifndef _UTILS_ENDIANNESS_H
-#define _UTILS_ENDIANNESS_H
+#ifndef _CBORG_ENDIANNESS_H
+#define _CBORG_ENDIANNESS_H
 
 #include <stdbool.h>
 #include <stdlib.h>
