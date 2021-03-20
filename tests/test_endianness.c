@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <inttypes.h>
 
-#include "cborg/endianness.h"
+#include <cborg/endianness.h>
 
 int main() {
   assert(0x2301 == bswap16(0x0123));
