@@ -1,3 +1,3 @@
 add_executable(test_endianness test_endianness.c)
 add_test(test_endianness test_endianness)
-target_link_libraries(test_endianness PUBLIC endianness)
+target_link_libraries(test_endianness PUBLIC cborg-endianness)

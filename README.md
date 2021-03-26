@@ -1,4 +1,4 @@
-# endianness
+# libcborg-endianness
 
 ## Build and Install
 
@@ -22,7 +22,7 @@ $ sudo make uninstall
 ## Usage and build
 
 ```sh
-$ gcc example.c -o example.bin -L/usr/local/lib/cborg -lendianness
+$ gcc example.c -o example.bin -L/usr/local/lib/cborg -lcborg-endianness
 $ ./example.bin
 is_little_endian = 1
 8961
@@ -36,10 +36,10 @@ is_little_endian = 1
 #include <cborg/endianness.h>
 
 int main() {
-  printf("is_little_endian = %d\n", is_little_endian());
-  printf("%u\n", bswap16(0x0123));
-  printf("%u\n", bswap32(0x01234567u));
-  printf("%"PRIu64"\n", bswap64(0x0123456789ABCDEFllu));
+  printf("cb_is_little_endian = %d\n", cb_is_little_endian());
+  printf("%u\n", cb_bswap16(0x0123));
+  printf("%u\n", cb_bswap32(0x01234567u));
+  printf("%"PRIu64"\n", cb_bswap64(0x0123456789ABCDEFllu));
   return 0;
 }
 
